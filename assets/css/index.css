@@ -16,7 +16,10 @@ body {
 /* ------------------ Font Styles ------------------ */
 
 h1 {
+    font-size: 4rem;
+    font-family: "Bebas Neue", Impact, sans-serif;
     padding: 0 1rem;
+    margin: 0;
 }
 
 
@@ -42,11 +45,11 @@ header {
 }
 
 .navbar li {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
 }
 
 .navbar li:hover {
-    background: #047519;
+    color: #0dff00;
 }
 
 
