@@ -1,0 +1,60 @@
+/* ------------------------------------------------------- */
+/* ------------------- Universal Styles ------------------ */
+/* ------------------------------------------------------- */
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    background: rgb(49, 49, 49);
+}
+
+/* ------------------ Font Styles ------------------ */
+
+h1 {
+    padding: 0 1rem;
+}
+
+
+/* ------------------------------------------------------- */
+/* -------------------- Header Styles -------------------- */
+/* ------------------------------------------------------- */
+
+header {
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.navbar li {
+    padding: 1.5rem;
+}
+
+.navbar li:hover {
+    background: #047519;
+}
+
+
+
+/* ------------------------------------------------------- */
+/* --------------------- Media Styles -------------------- */
+/* ------------------------------------------------------- */
+
+@media screen and (min-width: 769px){
+
+}
