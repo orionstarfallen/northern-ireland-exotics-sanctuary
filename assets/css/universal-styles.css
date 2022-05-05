@@ -1,11 +1,13 @@
 /* -------------------------------------------------------- */
 /* ------------------- Universal Styles ------------------- */
 /* -------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
 
 html {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 body {
@@ -18,11 +20,8 @@ body {
 /* ---------- h1 ---------- */
 
 h1 {
-    position: relative;
-    top: 0.25rem;
-    font-size: 5.5rem;
+    font-size: 2rem;
     font-family: "Bebas Neue", Impact, sans-serif;
-    padding: 0 1rem;
 }
 
 h1 b {
@@ -32,7 +31,7 @@ h1 b {
 /* ---------- a ----------- */
 
 a { 
-    font-size: 2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: white;
 }
@@ -58,7 +57,7 @@ ul{
 
 header {
     width: 100%;
-    height: 7rem;
+    height: 4rem;
     color: white;
     background-color: black;
     display: flex;
@@ -75,7 +74,7 @@ header {
 }
 
 #logo-img {
-    width: 6rem;
+    width: 4rem;
 }
 
 
@@ -84,12 +83,14 @@ header {
 .nav {
     width: 100%;
     position: fixed;
-    top: 7rem;
+    top: 4rem;
     background-color: black;
     overflow: hidden;
 }
 
 .menu a {
+    font-size: 1.5rem;
+    font-family: "Poppins", Arial, sans-serif;
     text-align: center;
     display: block;
     color: white;
@@ -110,7 +111,7 @@ header {
 .hamb{
     cursor: pointer;
     float: right;
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
 }
 
 .hamb-line {
@@ -170,32 +171,69 @@ header {
 /* --------------------- Media Styles --------------------- */
 /* -------------------------------------------------------- */
 
+/* ---------------- Tablet / iPad ------------------ */
+
 @media screen and (min-width: 768px) {
 
-.nav{
-    max-height: none;
-    margin-right: 1rem;
-    top: -0.75rem;
-    position: relative;
-    float: right;
-    width: fit-content;
-    background-color: transparent;
+    h1 {
+        position: relative;
+        top: 0.25rem;
+        font-size: 3.5rem;
+        font-family: "Bebas Neue", Impact, sans-serif;
+        padding: 0 0.45rem;
+    }
+
+    header {
+        height: 5em;    
+    }
+
+    #logo-img {
+        width: 5rem;
+    }
+
+    .nav{
+        max-height: none;
+        margin-right: 1rem;
+        top: -0.6rem;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    .menu li{
+        float: left;
+    }
+
+    .menu a {
+        text-align: left;
+        margin: 0 0.5rem;
+        font-size: 1.25rem;
+    }
+
+    .menu a:hover{
+        color: greenyellow;
+    }
+
+    .hamb{
+        display: none;
+    }
 }
 
-.menu li{
-    float: left;
-}
+/* ---------------- Laptop / Desktop ------------------ */
 
-.menu a {
-    text-align: left;
-    margin: 0 1.5rem;
-}
+@media screen and (min-width: 1024px) {
 
-.menu a:hover{
-    color: greenyellow;
-}
+    h1 {
+        font-size: 4rem;
+    }
 
-.hamb{
-    display: none;
-}
+    .menu a {
+        margin: 0 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    header {
+        height: 6rem;    
+    }
 }
