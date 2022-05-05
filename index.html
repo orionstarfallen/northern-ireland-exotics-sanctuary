@@ -3,7 +3,6 @@
 <html lang="en">
     <head>
 
-
         <!-- Meta -->
         <meta name="Northern Ireland Exotics Sanctuary" content="Exotic Animal Sanctuary">
         <meta url="www.niexotics.co.uk">
@@ -12,7 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Assets -->
-        <link rel="stylesheet" href="assets/css/header-footer.css">
+        <link rel="stylesheet" href="assets/css/universal-styles.css">
+        <link rel="stylesheet" href="assets/css/index.css">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,25 +25,30 @@
     </head>
 
     <body>
-        <header>
-            
-            <div class="logo">
-                <a href="index.html"><img id="logo" alt="Logo: White, single snake caduceus
-                     with a green halo and staff" src="assets/images/icons/logo.png"></a>
-                <h1><b>NI</b> Exotics</h1>
-            </div>
+      <header>
 
-            <nav>
-                <ul class="main-menu">
-                    <li id="nav-home">Home</li>
-                    <li id="nav-animals">Animals</li>
-                    <li id="nav-about">About</li>
-                    <li id="nav-contact">Contact</li>
-                </ul>
-              </nav>
-        </header>
+        <!-- Logo-->
+        <div class="logo">
+          <a href="index.html"><img id="logo-img" alt="Logo: White, single snake caduceus
+            with a green halo and staff" src="assets/images/icons/logo.png"></a>
+          <a href="index.html" class="logo"><h1><b>NI</b> Exotics<h1></h1></a>
+        </div>
 
-    </body>
 
-    
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Reptiles</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">About</a> </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+    </body>   
 </html>

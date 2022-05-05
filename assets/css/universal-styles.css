@@ -1,0 +1,200 @@
+/* -------------------------------------------------------- */
+/* ------------------- Universal Styles ------------------- */
+/* -------------------------------------------------------- */
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    background: whitesmoke;
+}
+
+/* ------------------ Font Styles ------------------- */
+
+/* ---------- h1 ---------- */
+
+h1 {
+    position: relative;
+    top: 0.25rem;
+    font-size: 5.5rem;
+    font-family: "Bebas Neue", Impact, sans-serif;
+    padding: 0 1rem;
+}
+
+h1 b {
+    color: greenyellow;
+}
+
+/* ---------- a ----------- */
+
+a { 
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:active {
+    transform: scale(0.9);
+}
+
+/* ---------- ul ---------- */
+
+ul{
+    list-style: none;
+}
+
+
+/* -------------------------------------------------------- */
+/* -------------------- Header Styles --------------------- */
+/* -------------------------------------------------------- */
+
+header {
+    width: 100%;
+    height: 7rem;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo-img {
+    width: 6rem;
+}
+
+
+/* ---------------- Navigation Menu ---------------- */
+
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 7rem;
+    background-color: black;
+    overflow: hidden;
+}
+
+.menu a {
+    text-align: center;
+    display: block;
+    color: white;
+    margin: 1.5rem;
+}
+
+.menu a:hover {
+    color: greenyellow;
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* -------------- Hamburger Menu Icon -------------- */
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 3rem 2rem;
+}
+
+.hamb-line {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 2rem;
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
+}
+
+/* Hide checkbox */
+.side-menu {
+    display: none;
+} 
+
+/* ----------- Toggle Hamburger Menu Icon ---------- */
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+  
+
+/* -------------------------------------------------------- */
+/* --------------------- Media Styles --------------------- */
+/* -------------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+
+.nav{
+    max-height: none;
+    margin-right: 1rem;
+    top: -0.75rem;
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: transparent;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu a {
+    text-align: left;
+    margin: 0 1.5rem;
+}
+
+.menu a:hover{
+    color: greenyellow;
+}
+
+.hamb{
+    display: none;
+}
+}
