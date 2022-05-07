@@ -59,7 +59,7 @@ header a:active {
     text-align: center;
     display: block;
     color: white;
-    margin: 1.5rem;
+    margin:  1rem 0;
 }
 
 .menu a:hover {
@@ -119,7 +119,8 @@ header {
 
 /* -------------- Hamburger Menu Icon -------------- */
 
-.hamb{
+.hamb {
+    -webkit-tap-highlight-color: transparent;
     cursor: pointer;
     float: right;
     padding: 3rem 1rem;
