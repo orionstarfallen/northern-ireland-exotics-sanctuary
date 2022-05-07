@@ -12,7 +12,14 @@ html {
 
 body {
     margin: 0;
-    background: whitesmoke;
+    background: black;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ------------------ Font Styles ------------------ */
@@ -44,12 +51,15 @@ a {
     color: white;
 }
 
+a:active {
+    -webkit-tap-highlight-color: transparent;
+}
+
 header a:visited {
     color: white;
 }
 
 header a:active {
-    -webkit-tap-highlight-color: transparent;
     transform: scale(0.9);
 }
 
@@ -80,13 +90,14 @@ ul{
 header {
     width: 100%;
     height: 4rem;
-    color: white;
-    background-color: black;
+    z-index: 10;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
+    color: white;
+    background-color: black;
 }
 
 /* ------------------ Logo Styles ------------------ */

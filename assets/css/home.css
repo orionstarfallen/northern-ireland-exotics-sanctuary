@@ -1,0 +1,65 @@
+/* -------------------------------------------------------- */
+/* ------------------- Universal Styles ------------------- */
+/* -------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------- */
+/* -------------------- Content Styles -------------------- */
+/* -------------------------------------------------------- */
+
+
+
+/* ---------------- Slogan Banner ------------------ */
+
+#slogan-banner {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/banners/dark-snake.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#chevron-down {
+    width: 5rem;
+    position: absolute;
+    bottom: 5rem;
+    filter: invert();
+}
+
+#chevron-down:active {
+    transform: scale(0.9);
+    opacity: 80%;
+}
+
+#welcome {
+    width: 90%;
+    height: 80rem;
+}
+
+/* -------------------------------------------------------- */
+/* --------------------- Media Styles --------------------- */
+/* -------------------------------------------------------- */
+
+/* ----------------- Small Tablet ------------------ */
+
+@media screen and (min-width: 360px) {
+
+    /* ------------ Font Styles ------------- */
+
+}
+
+/* ---------------- Tablet / iPad ------------------ */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* ---------------- Laptop / Desktop --------------- */
+
+@media screen and (min-width: 1024px) {
+
+}

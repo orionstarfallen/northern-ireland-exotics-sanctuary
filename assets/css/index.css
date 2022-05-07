@@ -4,11 +4,12 @@
 
 body {
     height: 100vh;
-    background: black;
     background-image: url(../images/banners/green-snake.jpg);
     background-size: cover;
     background-position: center;
 }
+
+/* ------------------ Font Styles ------------------ */
 
 h2 {
     max-width: 15rem;
@@ -36,7 +37,6 @@ h2 {
         right: 1rem;
         bottom: 0;
     }
-
 }
 
 /* ---------------- Tablet / iPad ------------------ */
@@ -51,7 +51,6 @@ h2 {
         right: 4rem;
         bottom: 0;
     }
-
 }
 
 /* ---------------- Laptop / Desktop ------------------ */
@@ -66,8 +65,6 @@ h2 {
         right: 5rem;
         bottom: 0;
     }
-
-
 }
 
 
